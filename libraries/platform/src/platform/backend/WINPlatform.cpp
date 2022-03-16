@@ -15,15 +15,15 @@
 
 #ifdef Q_OS_WIN
 #include <sstream>
-#include <qstring>
 #include <Windows.h>
 #include <iphlpapi.h>
 #include <stdio.h>
-#include <QSysInfo>
 #include <dxgi1_3.h>
 #pragma comment(lib, "dxgi.lib")
 #include <shellscalingapi.h>
 
+#include <qstring>
+#include <QSysInfo>
 #endif
 
 #include "../PlatformKeys.h"
