@@ -11,8 +11,6 @@
 #include <thread>
 #include <string>
 
-#include <QtCore/QtGlobal>
-
 #ifdef Q_OS_WIN
 #include <sstream>
 #include <Windows.h>
@@ -25,6 +23,8 @@
 #include <QString>
 #include <QSysInfo>
 #endif
+
+#include <QtCore/QtGlobal>
 
 #include "../PlatformKeys.h"
 #include "../../CPUIdent.h"
