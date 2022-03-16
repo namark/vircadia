@@ -7,11 +7,9 @@
 //
 
 #include "MACOSPlatform.h"
-#include "../PlatformKeys.h"
 
 #include <thread>
 #include <string>
-#include "../../CPUIdent.h"
 
 #include <QtCore/QtGlobal>
 
@@ -29,6 +27,9 @@
 #include <QString>
 #include <OpenGL/OpenGL.h>
 #endif
+
+#include "../PlatformKeys.h"
+#include "../../CPUIdent.h"
 
 using namespace platform;
 
