@@ -7,12 +7,9 @@
 //
 
 #include "WINPlatform.h"
-#include "../PlatformKeys.h"
 
 #include <thread>
 #include <string>
-
-#include "../../CPUIdent.h"
 
 #include <QtCore/QtGlobal>
 
@@ -29,6 +26,9 @@
 #include <shellscalingapi.h>
 
 #endif
+
+#include "../PlatformKeys.h"
+#include "../../CPUIdent.h"
 
 using namespace platform;
 
