@@ -10,6 +10,7 @@
 
 #include <thread>
 #include <string>
+
 #ifdef Q_OS_MAC
 #include <sstream>
 #include <regex>
@@ -24,6 +25,7 @@
 #include <QString>
 #include <QSysInfo>
 #endif
+
 #include <QtCore/QtGlobal>
 
 #include "../PlatformKeys.h"
