@@ -16,7 +16,6 @@
 #ifdef Q_OS_WIN
 #include <sstream>
 #include <qstring>
-#include <qsysinfo>
 #include <Windows.h>
 #include <iphlpapi.h>
 #include <stdio.h>
