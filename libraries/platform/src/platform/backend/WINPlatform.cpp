@@ -22,7 +22,7 @@
 #pragma comment(lib, "dxgi.lib")
 #include <shellscalingapi.h>
 
-#include <qstring>
+#include <QString>
 #include <QSysInfo>
 #endif
 
