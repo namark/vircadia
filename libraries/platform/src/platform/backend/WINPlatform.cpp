@@ -7,26 +7,28 @@
 //
 
 #include "WINPlatform.h"
+#include "../PlatformKeys.h"
 
 #include <thread>
 #include <string>
+
+#include "../../CPUIdent.h"
+
+#include <QtCore/QtGlobal>
+
 #ifdef Q_OS_WIN
 #include <sstream>
-
+#include <qstring>
+#include <qsysinfo>
 #include <Windows.h>
 #include <iphlpapi.h>
 #include <stdio.h>
+#include <QSysInfo>
 #include <dxgi1_3.h>
 #pragma comment(lib, "dxgi.lib")
 #include <shellscalingapi.h>
 
-#include <QSysInfo>
-#include <QString>
 #endif
-#include <QtCore/QtGlobal>
-
-#include "../PlatformKeys.h"
-#include "../../CPUIdent.h"
 
 using namespace platform;
 
