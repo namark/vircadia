@@ -11,22 +11,22 @@
 #include <thread>
 #include <string>
 
-#include <QtCore/QtGlobal>
 
 #ifdef Q_OS_MAC
-#include <unistd.h>
-#include <cpuid.h>
-#include <sys/sysctl.h>
-
 #include <sstream>
 #include <regex>
 
+#include <unistd.h>
+#include <cpuid.h>
+#include <sys/sysctl.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <ApplicationServices/ApplicationServices.h>
 #include <QSysInfo>
 #include <QString>
 #include <OpenGL/OpenGL.h>
 #endif
+
+#include <QtCore/QtGlobal>
 
 #include "../PlatformKeys.h"
 #include "../../CPUIdent.h"
