@@ -11,7 +11,6 @@
 #include <thread>
 #include <string>
 
-
 #ifdef Q_OS_MAC
 #include <sstream>
 #include <regex>
@@ -21,9 +20,10 @@
 #include <sys/sysctl.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <ApplicationServices/ApplicationServices.h>
-#include <QSysInfo>
-#include <QString>
 #include <OpenGL/OpenGL.h>
+
+#include <QString>
+#include <QSysInfo>
 #endif
 
 #include <QtCore/QtGlobal>
