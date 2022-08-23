@@ -148,7 +148,7 @@ void LogHandler::flushRepeatedMessages() {
     for (int m = 0; m < (int)_repeatedMessageRecords.size(); ++m) {
         int repeatCount = _repeatedMessageRecords[m].repeatCount;
         if (repeatCount > 1) {
-            QString repeatLogMessage = QString().setNum(repeatCount) + " repeated log entries - Last entry: \"" 
+            QString repeatLogMessage = QString().setNum(repeatCount) + " repeated log entries - Last entry: \""
                     + _repeatedMessageRecords[m].repeatString + "\"";
             printMessage(LogSuppressed, QMessageLogContext(), repeatLogMessage);
             _repeatedMessageRecords[m].repeatCount = 0;
@@ -158,6 +158,7 @@ void LogHandler::flushRepeatedMessages() {
 }
 
 QString LogHandler::printMessage(LogMsgType type, const QMessageLogContext& context, const QString& message) {
+    return "";
     if (message.isEmpty()) {
         return QString();
     }
@@ -258,6 +259,6 @@ void LogHandler::printRepeatedMessage(int messageID, LogMsgType type, const QMes
     } else {
         _repeatedMessageRecords[messageID].repeatString = message;
     }
- 
+
     ++_repeatedMessageRecords[messageID].repeatCount;
 }

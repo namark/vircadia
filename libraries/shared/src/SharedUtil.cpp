@@ -906,6 +906,10 @@ void setupHifiApplication(QString appName, QString orgName, QString orgDomain, Q
 #endif
 
     // Install the standard hifi message handler so we get consistant log formatting
+    QLoggingCategory::setFilterRules("*.debug=false\n"
+                                     "*.info=false\n"
+                                     "*.warning=false\n"
+                                     "*.critical=true");
     qInstallMessageHandler(LogHandler::verboseMessageHandler);
 }
 
